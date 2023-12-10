@@ -1,0 +1,34 @@
+.container {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+
+.span {
+  font-size: 14px;
+  user-select: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 60px;
+  height: 60px;
+  background: #fff;
+  color: #fff;
+  box-shadow: 0 0 0 8px currentColor, 0 0 15px 5px rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  transition: 0.8s;
+  transform: translate(-50%, -50%);
+}
+
+.span::after {
+  content: '';
+  position: absolute;
+  top: -15px;
+  border: 10px solid transparent;
+  border-bottom-color: currentColor;
+  border-top: none;
+}
